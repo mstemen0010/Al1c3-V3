@@ -1,0 +1,44 @@
+<html><head>
+  <SCRIPT src="./web-files/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'Alice.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iQWxpY2Uuam5scCI+DQogIDxpbmZvcm1hdGlvbj4NCiAgICA8dGl0bGU+QWxpY2U8L3RpdGxlPg0KICAgIDx2ZW5kb3I+TVN0ZW1lbjwvdmVuZG9yPg0KICAgIDxkZXNjcmlwdGlvbj5TYW1wbGUgSmF2YUZYIDIuMCBhcHBsaWNhdGlvbi48L2Rlc2NyaXB0aW9uPg0KICAgIDxvZmZsaW5lLWFsbG93ZWQvPg0KICA8L2luZm9ybWF0aW9uPg0KICA8cmVzb3VyY2VzPg0KICAgIDxqZng6amF2YWZ4LXJ1bnRpbWUgdmVyc2lvbj0iMi4yKyIgaHJlZj0iaHR0cDovL2phdmFkbC5zdW4uY29tL3dlYmFwcHMvZG93bmxvYWQvR2V0RmlsZS9qYXZhZngtbGF0ZXN0L3dpbmRvd3MtaTU4Ni9qYXZhZngyLmpubHAiLz4NCiAgPC9yZXNvdXJjZXM+DQogIDxyZXNvdXJjZXM+DQogICAgPGoyc2UgdmVyc2lvbj0iMS42KyIgaHJlZj0iaHR0cDovL2phdmEuc3VuLmNvbS9wcm9kdWN0cy9hdXRvZGwvajJzZSIvPg0KICAgIDxqYXIgaHJlZj0iQWxpY2UuamFyIiBzaXplPSIyMzU3NDIiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYi9jb21tb25zLWNvZGVjLTEuNi5qYXIiIHNpemU9IjIzMjc3MSIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliL2NvbW1vbnMtaHR0cGNsaWVudC0zLjEuamFyIiBzaXplPSIzMDUwMDEiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYi9jb21tb25zLWxvZ2dpbmctMS4xLjEuamFyIiBzaXplPSI2MDY4NiIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliL2h0dHBjbGllbnQtNC4yLjEuamFyIiBzaXplPSI0MjcwMjIiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYi9odHRwY2xpZW50LWNhY2hlLTQuMi4xLmphciIgc2l6ZT0iMTE1MDk2IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWIvaHR0cGNvcmUtNC4yLjEuamFyIiBzaXplPSIyMjMzNzQiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYi9odHRwbWltZS00LjIuMS5qYXIiIHNpemU9IjI2NTk4IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWIvamZ4cnQuamFyIiBzaXplPSIxNDk0Nzg1MyIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICA8L3Jlc291cmNlcz4NCiAgPGFwcGxldC1kZXNjICB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgbWFpbi1jbGFzcz0iY29tLmphdmFmeC5tYWluLk5vSmF2YUZYRmFsbGJhY2siICBuYW1lPSJBbGljZSIgPg0KICAgIDxwYXJhbSBuYW1lPSJyZXF1aXJlZEZYVmVyc2lvbiIgdmFsdWU9IjIuMisiLz4NCiAgPC9hcHBsZXQtZGVzYz4NCiAgPGpmeDpqYXZhZngtZGVzYyAgd2lkdGg9IjgwMCIgaGVpZ2h0PSI2MDAiIG1haW4tY2xhc3M9ImFsaWNlLkFsaWNlQXBwIiAgbmFtZT0iQWxpY2UiIC8+DQogIDx1cGRhdGUgY2hlY2s9ImFsd2F5cyIvPg0KPC9qbmxwPg0K'
+            },
+            {
+                javafx : '2.2+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbed() {
+        dtjava.embed(
+            {
+                url : 'Alice.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : 800,
+                height : 600,
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iQWxpY2Uuam5scCI+DQogIDxpbmZvcm1hdGlvbj4NCiAgICA8dGl0bGU+QWxpY2U8L3RpdGxlPg0KICAgIDx2ZW5kb3I+TVN0ZW1lbjwvdmVuZG9yPg0KICAgIDxkZXNjcmlwdGlvbj5TYW1wbGUgSmF2YUZYIDIuMCBhcHBsaWNhdGlvbi48L2Rlc2NyaXB0aW9uPg0KICAgIDxvZmZsaW5lLWFsbG93ZWQvPg0KICA8L2luZm9ybWF0aW9uPg0KICA8cmVzb3VyY2VzPg0KICAgIDxqZng6amF2YWZ4LXJ1bnRpbWUgdmVyc2lvbj0iMi4yKyIgaHJlZj0iaHR0cDovL2phdmFkbC5zdW4uY29tL3dlYmFwcHMvZG93bmxvYWQvR2V0RmlsZS9qYXZhZngtbGF0ZXN0L3dpbmRvd3MtaTU4Ni9qYXZhZngyLmpubHAiLz4NCiAgPC9yZXNvdXJjZXM+DQogIDxyZXNvdXJjZXM+DQogICAgPGoyc2UgdmVyc2lvbj0iMS42KyIgaHJlZj0iaHR0cDovL2phdmEuc3VuLmNvbS9wcm9kdWN0cy9hdXRvZGwvajJzZSIvPg0KICAgIDxqYXIgaHJlZj0iQWxpY2UuamFyIiBzaXplPSIyMzU3NDIiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYi9jb21tb25zLWNvZGVjLTEuNi5qYXIiIHNpemU9IjIzMjc3MSIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliL2NvbW1vbnMtaHR0cGNsaWVudC0zLjEuamFyIiBzaXplPSIzMDUwMDEiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYi9jb21tb25zLWxvZ2dpbmctMS4xLjEuamFyIiBzaXplPSI2MDY4NiIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliL2h0dHBjbGllbnQtNC4yLjEuamFyIiBzaXplPSI0MjcwMjIiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYi9odHRwY2xpZW50LWNhY2hlLTQuMi4xLmphciIgc2l6ZT0iMTE1MDk2IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWIvaHR0cGNvcmUtNC4yLjEuamFyIiBzaXplPSIyMjMzNzQiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYi9odHRwbWltZS00LjIuMS5qYXIiIHNpemU9IjI2NTk4IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWIvamZ4cnQuamFyIiBzaXplPSIxNDk0Nzg1MyIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICA8L3Jlc291cmNlcz4NCiAgPGFwcGxldC1kZXNjICB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgbWFpbi1jbGFzcz0iY29tLmphdmFmeC5tYWluLk5vSmF2YUZYRmFsbGJhY2siICBuYW1lPSJBbGljZSIgPg0KICAgIDxwYXJhbSBuYW1lPSJyZXF1aXJlZEZYVmVyc2lvbiIgdmFsdWU9IjIuMisiLz4NCiAgPC9hcHBsZXQtZGVzYz4NCiAgPGpmeDpqYXZhZngtZGVzYyAgd2lkdGg9IjgwMCIgaGVpZ2h0PSI2MDAiIG1haW4tY2xhc3M9ImFsaWNlLkFsaWNlQXBwIiAgbmFtZT0iQWxpY2UiIC8+DQogIDx1cGRhdGUgY2hlY2s9ImFsd2F5cyIvPg0KPC9qbmxwPg0K'
+            },
+            {
+                javafx : '2.2+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbed);
+</script>
+
+</head><body>
+<h2>Test page for <b>Alice</b></h2>
+  <b>Webstart:</b> <a href='Alice.jnlp' onclick="return launchApplication('Alice.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>

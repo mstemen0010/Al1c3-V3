@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane id="label" fx:id="mainPane" blendMode="SRC_OVER" cache="true" depthTest="ENABLE" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#handleKeyPressed" prefHeight="793.0" prefWidth="815.0" styleClass="pane" xmlns:fx="http://javafx.com/fxml" fx:controller="wrc.WRCController">
+  <children>
+    <Label alignment="CENTER" layoutX="14.0" layoutY="80.0" prefHeight="84.0" prefWidth="303.0" style="&#10;" text="Where to send Mr White Rabbit?">
+      <effect>
+        <Reflection />
+      </effect>
+      <font>
+        <Font name="P22DaVinci-Forward" size="28.0" />
+      </font>
+      <stylesheets>
+        <URL value="@white-rabbit-stylesheet.css" />
+      </stylesheets>
+      <textFill>
+        <Color blue="0.200" green="0.200" red="1.000" fx:id="x1" />
+      </textFill>
+    </Label>
+    <HBox minHeight="27.0" prefHeight="136.0" prefWidth="771.716064453125" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="43.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <MenuBar minHeight="25.0" prefHeight="57.0" prefWidth="539.9998779296875" styleClass="NavBarCell1">
+          <effect>
+            <Lighting>
+              <bumpInput>
+                <Shadow />
+              </bumpInput>
+              <light>
+                <javafx.scene.effect.Light.Distant color="#ff6666" />
+              </light>
+            </Lighting>
+          </effect>
+          <menus>
+            <Menu mnemonicParsing="false" text="File">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Close" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Delete" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+              <items>
+                <MenuItem mnemonicParsing="false" text="About" />
+              </items>
+            </Menu>
+          </menus>
+          <stylesheets>
+            <URL value="@white-rabbit-stylesheet.css" />
+          </stylesheets>
+        </MenuBar>
+        <ImageView blendMode="SRC_OVER" cache="true" fitHeight="88.70000033256005" fitWidth="89.29530334472656" pickOnBounds="true" preserveRatio="true">
+          <effect>
+            <Lighting specularConstant="0.4269841269841269">
+              <bumpInput>
+                <Shadow />
+              </bumpInput>
+              <contentInput>
+                <SepiaTone level="0.6037735849056604">
+                  <input>
+                    <Reflection />
+                  </input>
+                </SepiaTone>
+              </contentInput>
+              <light>
+                <javafx.scene.effect.Light.Distant />
+              </light>
+            </Lighting>
+          </effect>
+          <Image url="@whiteRabbit_classic_150.jpg" preserveRatio="false" smooth="false" />
+          <HBox.margin>
+            <Insets top="50.0" />
+          </HBox.margin>
+        </ImageView>
+        <ProgressIndicator fx:id="throbber" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" progress="1.0" visible="false" HBox.hgrow="NEVER">
+          <HBox.margin>
+            <Insets left="20.0" top="30.0" />
+          </HBox.margin>
+        </ProgressIndicator>
+      </children>
+    </HBox>
+    <Label layoutX="14.0" layoutY="213.0" text="http://" textFill="$x1">
+      <effect>
+        <Reflection />
+      </effect>
+      <stylesheets>
+        <URL value="@white-rabbit-stylesheet.css" />
+      </stylesheets>
+    </Label>
+    <TextField fx:id="textfeild" layoutY="225.0" onAction="#handleTextFieldAction" prefWidth="420.2952880859375" AnchorPane.rightAnchor="278.0">
+      <effect>
+        <Reflection />
+      </effect>
+      <stylesheets>
+        <URL value="@white-rabbit-stylesheet.css" />
+      </stylesheets>
+    </TextField>
+    <WebView fx:id="webViewResponse" layoutY="293.0" prefHeight="119.0" prefWidth="732.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="43.0" />
+    <ProgressBar fx:id="progBar" layoutX="34.0" layoutY="767.0" prefWidth="200.0" progress="0.0" />
+    <Button fx:id="go_button" layoutY="224.0" mnemonicParsing="false" onAction="#handleButtonAction" text="GO!" AnchorPane.rightAnchor="234.0">
+      <effect>
+        <Reflection />
+      </effect>
+      <stylesheets>
+        <URL value="@white-rabbit-stylesheet.css" />
+      </stylesheets>
+    </Button>
+    <Label fx:id="statusLabel" layoutX="253.0" layoutY="755.0" prefWidth="328.0" styleClass="label2" text="Status:">
+      <stylesheets>
+        <URL value="@white-rabbit-stylesheet.css" />
+      </stylesheets>
+    </Label>
+    <WebView fx:id="webViewContent" layoutY="460.0" prefHeight="286.0" prefWidth="739.0" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="42.0" />
+    <Text fill="#99fff3" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Response" AnchorPane.rightAnchor="52.71">
+      <font>
+        <Font name="P22DaVinci-Forward" size="32.0" />
+      </font>
+    </Text>
+    <Text fill="#99ffda" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Content" AnchorPane.rightAnchor="43.28">
+      <font>
+        <Font name="P22DaVinci-Forward" size="36.0" />
+      </font>
+    </Text>
+  </children>
+  <effect>
+    <Glow level="0.2748427672955975">
+      <input>
+        <InnerShadow>
+          <input>
+            <DropShadow />
+          </input>
+        </InnerShadow>
+      </input>
+    </Glow>
+  </effect>
+  <stylesheets>
+    <URL value="@white-rabbit-stylesheet.css" />
+  </stylesheets>
+</AnchorPane>

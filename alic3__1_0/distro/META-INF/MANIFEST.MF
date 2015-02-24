@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+JavaFX-Version: 2.2
+implementation-vendor: MStemen
+implementation-title: Alice
+implementation-version: 1.0
+JavaFX-Application-Class: alice.AliceApp
+JavaFX-Class-Path: Alice.jar lib/commons-codec-1.6.jar lib/commons-htt
+ pclient-3.1.jar lib/commons-logging-1.1.1.jar lib/httpclient-4.2.1.ja
+ r lib/httpclient-cache-4.2.1.jar lib/httpcore-4.2.1.jar lib/httpmime-
+ 4.2.1.jar lib/jfxrt.jar
+Created-By: JavaFX Packager
+Main-Class: com/javafx/main/Main
+
