@@ -15,7 +15,8 @@ It is worth noting that the reflect to "spin' up the classes through reflection 
 also reflects the classes into existence via the typed enumerations (since enumerations are inner classes in java, you can have
 methodology on said enumerations: 
 
-  enum AliceClientType {
+<pre>
+  eum AliceClientType {
  23 
  24         Undefined("Undefined", null, null ),
  25         HttpClient31("HttpClient 3.1", HttpClient.class, AliceProtoClient31.class ),
@@ -54,7 +55,7 @@ methodology on said enumerations:
  68             return this.currentClient;
  69             
  70         }
- 
+ </pre>
  
  
  
