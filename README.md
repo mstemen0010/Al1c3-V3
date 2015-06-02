@@ -1,7 +1,7 @@
 # Al1c3-V3
 Third variation on the Java FX Alice polymorphic browser
 
-What is a polymorphic browswer one may ask? Simple answer, a browswer that is able to change its underlying engine (or version
+What is a polymorphic browswer one may ask? Simple answer, a browser that is able to change its underlying engine (or version
 of HttpClient) on the fly. This is done through a combination an enumations that contains values that are ultimately class names
 and reflection. this results in typed/type safe driven reflection at runtime (very polymorphic indeed) and may represent a new 
 type of entity in OOD. Alice was made to help explore a security threat cause by various versions of the Apaches HttpClient
